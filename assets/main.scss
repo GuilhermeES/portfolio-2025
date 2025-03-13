@@ -25,9 +25,14 @@ body {
 .btn-language {
   border: none;
   background: transparent;
+  padding: 0;
   color: #fff;
   font-weight: bold;
   height: 20px;
+
+  &:first-child{
+    margin-right: 0.5rem;
+  }
 
   html.light-mode & {
     color: var(--black-2);

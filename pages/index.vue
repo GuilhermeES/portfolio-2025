@@ -15,7 +15,7 @@
         <div class="d-flex pt-1 pb-4 pb-md-0 justify-content-center justify-content-md-end">
           <button @click="switchLanguage('pt')" class="btn-language">PT</button>
           <button @click="switchLanguage('en')" class="btn-language">EN</button>
-          <div class="change-color ms-2">
+          <div class="change-color ms-3">
             |
             <img
                 :src="iconSrc"

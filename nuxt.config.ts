@@ -5,6 +5,21 @@ export default defineNuxtConfig({
   css: ['~/assets/bootstrap.scss', '~/assets/main.scss'],
   plugins: [{ src: '~/plugins/bootstrap.client.ts', mode: 'client' }],
   modules: ['@nuxtjs/i18n', '@nuxtjs/color-mode'],
+  app: {
+    head: {
+      title: 'Portfolio - Guilherme ES',
+      htmlAttrs: {
+        lang: 'pt-BR',
+      },
+      meta: [
+        { name: 'description', content: 'Portfólio de Guilherme ES, apresentando projetos e habilidades em desenvolvimento web.' },
+        { name: 'robots', content: 'noindex, nofollow' }
+      ],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      ]
+    }
+  },
   i18n: {
     lazy: true,
     langDir: 'locales/',
