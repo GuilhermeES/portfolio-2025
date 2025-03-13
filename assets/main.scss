@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --black: #242424;
+  --black-2: #383737;
+}
+
+body {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background: var(--black);
+}
+
+.light-mode body {
+  background-color: #f8fafc;
+  color: var(--black-2);
+}
+
+.dark-mode body {
+  background-color: var(--black);
+  color: #eee;
+}
+
+.btn-language {
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-weight: bold;
+  height: 20px;
+
+  html.light-mode & {
+    color: var(--black-2);
+  }
+}
+
+.btn-language:hover {
+  text-decoration: underline;
+}
+
+.change-color {
+  img {
+    cursor: pointer;
+    position: relative;
+    height: 20px;
+    top: -2px;
+  }
+}
+
+.header {
+  padding-top: 56px;
+
+  h1 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+  }
+}
+
+.main {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  margin: 23px;
+
+  html.light-mode & {
+    border: 1px solid rgba(56, 55, 55, 8%);
+  }
+}
+
+.mini-about {
+  font-weight: 300;
+  font-size: 16px;
+  margin: 0;
+  opacity: 0.8;
+}
+
+.content {
+  padding-top: 30px;
+
+  a {
+    text-decoration: none;
+    color: unset;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
+
+.custom-hr {
+  margin-top: 50px;
+  margin-bottom: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  html.light-mode & {
+    border: 1px solid rgba(56, 55, 55, 0.16);
+  }
+}
+
+.badges {
+  font-size: 14px;
+  padding-top: 20px;
+  font-weight: 300;
+
+  div {
+    border-radius: 15px;
+    padding: 4px 12px;
+  }
+}
+
+.projects {
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
+
+.projects {
+  padding-top: 20px;
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-weight: 300;
+    opacity: 0.8;
+  }
+
+  &__list {
+    padding-top: 20px;
+
+    img {
+      width: 100%;
+      filter: grayscale(80%);
+      transition: 0.5s all;
+    }
+  }
+
+  &__card {
+    display: block;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 1s all;
+    background-color: transparent !important;
+
+    h3 {
+      font-size: 18px;
+      font-weight: 400;
+      padding-top: 15px;
+      color: #eeeeee;
+
+      html.light-mode & {
+        color: var(--black-2);
+      }
+
+    }
+
+    .access {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 200;
+      font-size: 16px;
+
+      html.light-mode & {
+        color: var(--black-2);
+      }
+    }
+
+    html.light-mode & {
+      background: #f1f5f9;
+    }
+
+    &:hover{
+      transform: translateY(-10px);
+    }
+
+    &:hover img{
+      filter: grayscale(0);
+    }
+  }
+
+}
+
+.footer {
+  padding-top: 67px;
+  padding-bottom: 56px;
+
+  &__list {
+    a {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 12px;
+
+      &:last-child {
+        margin-right: 0px;
+      }
+
+      svg{
+        fill: #fff;
+        width: 20px;
+        height: 20px;
+        html.light-mode & {
+          fill: var(--black-2);
+        }
+      }
+
+      html.light-mode & {
+        background: #eaeaea;
+      }
+    }
+
+    img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1000px;
+  }
+}
+
+@media (min-width: 768px) {
+  .badges {
+    div {
+      &:first-child {
+        padding-left: 0;
+      }
+    }
+  }
+}
