@@ -30,7 +30,7 @@ body {
   font-weight: bold;
   height: 20px;
 
-  &:first-child{
+  &:first-child {
     margin-right: 0.5rem;
   }
 
@@ -108,9 +108,10 @@ body {
   padding-top: 20px;
   font-weight: 300;
 
-  div {
-    border-radius: 15px;
-    padding: 4px 12px;
+  &__title{
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: 500;
   }
 }
 
@@ -178,11 +179,11 @@ body {
       background: #f1f5f9;
     }
 
-    &:hover{
+    &:hover {
       transform: translateY(-10px);
     }
 
-    &:hover img{
+    &:hover img {
       filter: grayscale(0);
     }
   }
@@ -208,10 +209,11 @@ body {
         margin-right: 0px;
       }
 
-      svg{
+      svg {
         fill: #fff;
         width: 20px;
         height: 20px;
+
         html.light-mode & {
           fill: var(--black-2);
         }

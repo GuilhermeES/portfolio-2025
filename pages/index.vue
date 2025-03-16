@@ -32,24 +32,18 @@
           {{ $t('about_1') }}
         </p>
         <p v-html="$t('about_2', { company: '<strong>@maquinetavirtual</strong>' })"></p>
-        <div class="badges d-flex flex-wrap gap-0 gap-md-2 justify-content-center justify-content-md-start">
-          <div>
-            Javascript | Typescript
-          </div>
-          <div>
-            Vue | Nuxt.js
-          </div>
-          <div>
-            React | Next.js
-          </div>
-          <div>
-            Wordpress
-          </div>
-          <div>
-            PHP
-          </div>
-          <div>
-            Laravel
+        <div class="badges justify-content-center justify-content-md-start">
+          <div class="">
+            <div class="badges__title">Skills</div>
+            <div class="d-flex">
+              <div>
+                HTML &nbsp; | &nbsp; CSS &nbsp; | &nbsp; SCSS &nbsp | &nbsp; JavaScript &nbsp;
+                | &nbsp; Vue.js &nbsp; | &nbsp; Nuxt.js &nbsp;
+                | &nbsp; React &nbsp; | &nbsp; Next.js &nbsp;
+                | &nbsp; PHP &nbsp; | &nbsp; Wordpress &nbsp;
+                | &nbsp; Gulp.js &nbsp;
+              </div>
+            </div>
           </div>
         </div>
       </div>
